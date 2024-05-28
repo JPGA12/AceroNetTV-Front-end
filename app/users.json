@@ -1,0 +1,41 @@
+{
+    "admin": {
+        "password": "pbkdf2:sha256:600000$Fg2g2sqefBnuq01o$b193567f27ae6ddcec06b9a38cefe08c87f4eeb0c4917eaff25e5d732f91999a",
+        "cedula": 123456,
+        "direccion": "Admin Address",
+        "correo": "admin@example.com",
+        "telefono": 1234567890,
+        "ciudad": "Admin City",
+        "departamento": "Admin Department",
+        "ubicacion_geografica": "Admin Location",
+        "estado": "Active",
+        "fecha_de_corte": "2024-01-01",
+        "rol": "admin"
+    },
+    "juan": {
+        "password": "pbkdf2:sha256:600000$WKI9CyONruaATAlQ$77e5a8ac8da420d1cade764e571c4e62702b3ed703b5e227bc0d21704ec3833a",
+        "cedula": "0987",
+        "direccion": "tv 1 n 1 21",
+        "correo": "juan@gmail.com",
+        "telefono": "311211",
+        "ciudad": "Sogamoso",
+        "departamento": "Boyaca",
+        "ubicacion_geografica": "Paz de ariporo",
+        "estado": "BOyaca",
+        "fecha_de_corte": "2024-02-15",
+        "rol": "usuario"
+    },
+    "andres": {
+        "password": "pbkdf2:sha256:600000$TsbTnWU0sduGSl7j$885d0c75c084b230a5ae981da5e00bcd7db4879fcbb19ee430bfc845333ca446",
+        "cedula": "123",
+        "direccion": "cr 1 n 1",
+        "correo": "andres@yahoo.com",
+        "telefono": "1234234",
+        "ciudad": "Sogamoso",
+        "departamento": "Boyaca",
+        "ubicacion_geografica": "Paz de ariporo",
+        "estado": "BOyaca",
+        "fecha_de_corte": "2024-05-03",
+        "rol": "usuario"
+    }
+}

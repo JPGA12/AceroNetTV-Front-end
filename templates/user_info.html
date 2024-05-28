@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block title %}Información del Usuario{% endblock %}
+{% block content %}
+<div class="container">
+    <h1>Información del Usuario</h1>
+    <p><strong>Cédula:</strong> {{ user['cedula'] }}</p>
+    <p><strong>Dirección:</strong> {{ user['direccion'] }}</p>
+    <p><strong>Correo:</strong> {{ user['correo'] }}</p>
+    <p><strong>Teléfono:</strong> {{ user['telefono'] }}</p>
+    <p><strong>Ciudad:</strong> {{ user['ciudad'] }}</p>
+    <p><strong>Departamento:</strong> {{ user['departamento'] }}</p>
+    <p><strong>Ubicación Geográfica:</strong> {{ user['ubicacion_geografica'] }}</p>
+    <p><strong>Estado:</strong> {{ user['estado'] }}</p>
+    <p><strong>Fecha de Corte:</strong> {{ user['fecha_de_corte'] }}</p>
+    <p><strong>Rol:</strong> {{ user['rol'] }}</p>
+    <a href="{{ url_for('user_dashboard', username=user['cedula']) }}" class="btn btn-secondary">Regresar al Dashboard</a>
+</div>
+{% endblock %}

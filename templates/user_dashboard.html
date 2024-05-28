@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block title %}Dashboard de Usuario{% endblock %}
+{% block content %}
+<div class="container">
+    <h1>Bienvenido, {{ user['cedula'] }}</h1>
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('user_info', username=user['cedula']) }}">Información</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('user_products', username=user['cedula']) }}">Productos</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('user_invoices', username=user['cedula']) }}">Historial de Facturas</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('user_generate_invoice', username=user['cedula']) }}">Generar Factura</a>
+        </li>
+    </ul>
+</div>
+{% endblock %}

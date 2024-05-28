@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %}Admin Dashboard{% endblock %}
+{% block content %}
+<div class="text-center my-5">
+    <h1>Admin Dashboard</h1>
+    <p>Bienvenido, Admin. Usa los botones a continuación para gestionar usuarios.</p>
+    <a href="{{ url_for('create_user') }}" class="btn btn-primary m-2">Crear Usuario</a>
+    <a href="{{ url_for('read_user') }}" class="btn btn-primary m-2">Leer Usuario por ID</a>
+    <a href="{{ url_for('update_user') }}" class="btn btn-primary m-2">Actualizar Usuario por ID</a>
+    <a href="{{ url_for('delete_user') }}" class="btn btn-primary m-2">Eliminar Usuario por ID</a>
+</div>
+{% endblock %}

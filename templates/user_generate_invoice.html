@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block title %}Generar Factura{% endblock %}
+{% block content %}
+<div class="container">
+    <h1>Generar Factura</h1>
+    <p>Aquí se podrá generar una nueva factura para el usuario.</p>
+    <a href="{{ url_for('user_dashboard', username=user['cedula']) }}" class="btn btn-secondary">Regresar al Dashboard</a>
+</div>
+{% endblock %}

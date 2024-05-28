@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block title %}Historial de Facturas{% endblock %}
+{% block content %}
+<div class="container">
+    <h1>Historial de Facturas</h1>
+    <p>Aquí se listarán las facturas del usuario.</p>
+    <a href="{{ url_for('user_dashboard', username=user['cedula']) }}" class="btn btn-secondary">Regresar al Dashboard</a>
+</div>
+{% endblock %}

@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% block title %}Leer Usuario{% endblock %}
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-body">
+                <h1>Leer Usuario</h1>
+                <form method="post">
+                    <div class="form-group mb-3">
+                        <label for="user_id">Cédula</label>
+                        <input type="number" class="form-control" id="user_id" name="user_id">
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="user_email">Correo</label>
+                        <input type="email" class="form-control" id="user_email" name="user_email">
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Leer Usuario</button>
+                </form>
+                <a href="{{ url_for('admin_dashboard') }}" class="btn btn-secondary w-100 mt-3">Regresar al Dashboard</a>
+                {% if user %}
+                <div class="mt-3">
+                    <h3>Detalles del Usuario</h3>
+                    <p><strong>Nombre:</strong> {{ user_id }}</p>
+                    <p><strong>Cédula:</strong> {{ user.cedula }}</p>
+                    <p><strong>Dirección:</strong> {{ user.direccion }}</p>
+                    <p><strong>Correo:</strong> {{ user.correo }}</p>
+                    <p><strong>Teléfono:</strong> {{ user.telefono }}</p>
+                    <p><strong>Ciudad:</strong> {{ user.ciudad }}</p>
+                    <p><strong>Departamento:</strong> {{ user.departamento }}</p>
+                    <p><strong>Ubicación Geográfica:</strong> {{ user.ubicacion_geografica }}</p>
+                    <p><strong>Estado:</strong> {{ user.estado }}</p>
+                    <p><strong>Fecha de Corte:</strong> {{ user.fecha_de_corte }}</p>
+                    <p><strong>Rol:</strong> {{ user.rol }}</p>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
